@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>header</header>
+			<section>
+				<div class="mark">
+					<div class="box">
+						<div class="top">
+							<img src="img/logo_01.png" alt="" />
+							<p>设备测试预约系统</p>
+						</div>
+						<p class="pt"><img src="img/icon_01.png" alt="" /><input type="text" placeholder="请输入手机号" id="user" name="user" class="user"/></p>
+						<p class="pm"><img src="img/icon_03.png"/><input type="text" placeholder="请输入密码" id="pwd" name="pwd" class="pwd"/></p>
+						<button id="btn">登录账号开始预约</button>
+					</div>
+				</div>
+			</section>
+			<footer>footer</footer>
+		</div>
+		<script>
+			var user = document.getElementById('user'),
+				pwd = document.getElementById('pwd'),
+				btn = document.getElementById('btn'),
+				userV,pwdV;
+			btn.onclick = function(){
+				userV = user.value.trim();
+				pwdV = pwd.value.trim();
+				console.log(userV)
+			}
+		</script>
+	</body>
+</html>
